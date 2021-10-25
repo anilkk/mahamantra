@@ -4,14 +4,17 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Mahamantra</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Charanam Sharanam Ramabike Charanam Sharanam Trayambake"></meta>
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Charanam Sharanam Ramabike <br />
+          Charanam Sharanam Trayambake 
         </h1>
+        <br />
         <audio controls loop>
           <source src="/mahamantra.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
@@ -19,13 +22,14 @@ export default function Home() {
       </main>
 
       <footer>
+        Created by  {' '} 
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://twitter.com/anilbms75"
           target="_blank"
           rel="noopener noreferrer"
+          className="footer-link"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          @anilbms75 
         </a>
       </footer>
 
@@ -86,10 +90,9 @@ export default function Home() {
         .title {
           margin: 0;
           line-height: 1.15;
-          font-size: 4rem;
+          font-size: 2.8rem;
+          text-transform: uppercase;
         }
-
-        .title,
         .description {
           text-align: center;
         }
@@ -152,6 +155,9 @@ export default function Home() {
           height: 1em;
         }
 
+        .footer-link {
+          padding-left: 0.5rem;
+        }
         @media (max-width: 600px) {
           .grid {
             width: 100%;
